@@ -5,7 +5,7 @@ category:
   - Mathematics
 author: El Ghemary Farah
 date: 2023-04-05T15:24:59.781Z
-featureImage: disqus-hero.jpg
+featureImage: fractal-2173803_1920.jpg
 ---
 
 Imagine you're a computer Scientist tasked to optimize a real-life problem. You know that the best way to find the optimal solution is to use the simplex method. As a mathemathics undergraduate, this is how I first encountered the simplex method, and I was stressed out and overwhelmed by the sheer amount of complicated calculations involved. It didn't make any sense, and I found it difficult to use it for solving real-life Problems. However, everything changed when I started visualizing the calculations in terms of vectors and planes, everything click into place. In this Article, I want to share my understading of the simplex method, and show you how to think about it in an ituitive way. Whether you're a fellow math student or a math enthousiast looking to deeping your understanding of optimization.   
@@ -53,12 +53,9 @@ For our previous example it is going to be
      
 ![](https://latex.codecogs.com/svg.image?%7Bmax%7D%5C%20z%20=%20x_1%20&plus;%202x_2%20%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%7D%20s.t%5C%20%5C%20%5C%20%5C%20%20x_1%20&plus;%20x_3%20=%203,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1%20&plus;%20x_2%20&plus;%20x_4%20=%205,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1,x_2,%20x_3,%20x_4%20%5Cgeq%200)
 
-Now here is a graph of our standarized LP     
-
-(image)    
 
 Now the fundemental idea of the simplex method algorithm is to improve the solution at each iteration, which means we have already the fesible region which represents our solutions    
-	Take on solution    
+	Take a solution    
 	is the next solution optimizing my function      
 	if no     
 		take the next solution      
@@ -66,26 +63,29 @@ Now the fundemental idea of the simplex method algorithm is to improve the solut
 	if yes     
 		congratulations you found the optimal solution      
 
+Now how can this scheme be transelated into a geometrical Interpretation    
+Now thanks to the fundemenatl theorem of linear programming, if our set of solutions is a convex set, we can assume that the optimal solution in a vertex of the feasible polytope.     
 
-**An Overview of the Algorithm**
 
-1. Choose the initial vertex
-2. Check the neighboring vertices, if the nearest vertex increases the objective function move to it
-3. keep moving from vertex to vertex
-4. if all the neighboring vertices decreases z or do not change it at all, then the algorithm stops
-5. This vertex is the optimal solution
-
-\# animation of the algorithm
+let's improve our previous scheme :    
+	choose the initial solution, which means the initial vertex    
+	Check the neighboring vertex    
+		if the nearest vertex increases the objective function    
+			move to it   
+			keep moving from vertex to vertex    
+		if the all the neighboring vertices deacreses our function or do not cange it at all    
+			stop the algorithm, cogratulations you found th eoptimal solution     
 
 Let's Apply this to the previous example of our LP
 
-1. Let's choose the origin as the initial vertex
+1. Let's choose the origin as the initial vertex (0,0)
 
-  ![](https://latex.codecogs.com/svg.image?x_1%20=%20x_2%20=%200) ![](https://latex.codecogs.com/svg.image?x_3&space;=&space;3,&space;x_4&space;=&space;5&space;and&space;z&space;=&space;0)
+  ![](https://latex.codecogs.com/svg.image?x_1%20=%20x_2%20=%200) ![](https://latex.codecogs.com/svg.image?x_3&space;=&space;3,&space;x_4&space;=&space;5&space;and&space;z&space;=&space;0)      
+  ![alt text](https://github.com/elghemary/farah/assets/uploads/(0.0).png?raw=true)
 
 2. Choose a neighbor :
 
-   from the graph we can see the moving from the origin to the vertex in x2 will increase our objective function faster than the vertex in x_1
+   from the graph we can see the moving from the origin to the vertex in ![](https://latex.codecogs.com/svg.image?x_2) will increase our objective function faster than the vertex in ![](https://latex.codecogs.com/svg.image?x_1)
 
    so we choose ![](https://latex.codecogs.com/svg.image?x_1) as the basic
 3. Choose the one that gets to zero first
@@ -103,6 +103,8 @@ Let's Apply this to the previous example of our LP
 5. Choose a neighbor:
 
    whatever vertex we choose from the neighbors, our f decreases, so that means the algorithm stops and (0,5) is our solution
+   ![alt text](https://github.com/elghemary/farah/assets/uploads/(0.5).png?raw=true)
+
 
 Pretty simple isn't it ? but you might think okay that's great but I'm still confused on how this is related to the tedious calculations of the method ?
 
