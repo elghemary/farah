@@ -8,18 +8,19 @@ date: 2023-04-05T15:24:59.781Z
 featureImage: disqus-hero.jpg
 ---
 
-Imagine you're a computer Scientist tasked to optimize a real-life problem. You know that the best way to find the optimal solution is to use the simplex method. As a mathemathics undergraduate, this is how I first encountered the simplex method, and I was stressed out and overwhelmed by the sheer amount of complicated calculations involved. It didn't make any sense, and I found it difficult to use it for solving real-life Problems.
-However, everything changed when I started visualizing the calculations in terms of vectors and planes that everything click into place. In this Article, I want to share my understading of the simplex method, and show how to think about it in an ituitive way. Whether you're a fellow math student or a math enthousiast looking to deeping your understanding of optimization.
+Imagine you're a computer Scientist tasked to optimize a real-life problem. You know that the best way to find the optimal solution is to use the simplex method. As a mathemathics undergraduate, this is how I first encountered the simplex method, and I was stressed out and overwhelmed by the sheer amount of complicated calculations involved. It didn't make any sense, and I found it difficult to use it for solving real-life Problems.   
 
->"Linear Programming is a generalization of Linear Algebra. It is capable of handling a variety of problems, ranging from ﬁnding schedules for airlines or movies in a theater to distributing oil from reﬁneries to markets. The reason for this great versatility is the ease at which constraints can be incorporated into the model" by Steven J. Miller (2007) An Introduction to Linear Programming."
+However, everything changed when I started visualizing the calculations in terms of vectors and planes that everything click into place. In this Article, I want to share my understading of the simplex method, and show how to think about it in an ituitive way. Whether you're a fellow math student or a math enthousiast looking to deeping your understanding of optimization.   
 
-Many real-life problems can be formulated as linear porgrams, hence LPs are a mathematical modeling technique in which the objective is to maximize or minimize a certain output. For example, maximizing the profit of a certai company or minimizing the cost and the time of producing a certain product.
+>Linear Programming is a generalization of Linear Algebra. It is capable of handling a variety of problems, ranging from ﬁnding schedules for airlines or movies in a theater to distributing oil from reﬁneries to markets. The reason for this great versatility is the ease at which constraints can be incorporated into the model" by Steven J. Miller (2007) An Introduction to Linear Programming.   
 
-let's take an example of a linear program and build our explanation on it :
+Many real-life problems can be formulated as linear porgrams, hence LPs are a mathematical modeling technique in which the objective is to maximize or minimize a certain output. For example, maximizing the profit of a certai company or minimizing the cost and the time of producing a certain product.   
+
+let's take an example of a linear program and build our explanation on it :   
 
 ![](https://latex.codecogs.com/svg.image?%7Bmax%7D%5C%20z%20=%20x_1%20&plus;%202x_2%20%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%7D%20s.t%5C%20%5C%20%5C%20%5C%20%20x_1%20%5Cleq%203,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1%20&plus;%20x_2%20%5Cleq%205,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1,x_2%20%5Cgeq%200)
 
-To make sure that our model is indeed a linear program, it should verify this three conditions: 
+To make sure that our model is indeed a linear program, it should verify this three conditions:   
 	*All variables are continuous
 	*The objective and constraints are linear 
 	*there is single objective maximize or minimise not both 
