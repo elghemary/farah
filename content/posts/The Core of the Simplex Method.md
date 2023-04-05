@@ -21,7 +21,7 @@ let's take an example of a linear program and build our explanation on it :
 
 To make sure that our model is indeed a linear program, it should verify this three conditions:   
 	* All variables are continuous    
-	* The objective and constraints are linear    
+	* The objective and constraints are linear     
 	* There is single objective maximize or minimise not both     
 	         
 Now, as you might already know the simplex method comes as an answer for the limitations of the graphical method. Instead of solving Linear Programs of 2 variables, With this method we are able to solve LPs of n variables. However, before tackling the geometric intuition behind the algorith, I'd like to take a look at the [Wikipedia](https://en.wikipedia.org/wiki/Simplex) definition of a "Simplex":
