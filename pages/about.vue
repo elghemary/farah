@@ -3,6 +3,7 @@
     <site-hero
       title="Arsteminisit"
       subtitle="El Ghemary Farah"
+      image="https://github.com/elghemary/Farah/blob/master/assets/uploads/2.jpg"
     ></site-hero>
     <main-section theme="sidebar-right">
       <template v-slot:default>
