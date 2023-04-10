@@ -5,7 +5,7 @@ category:
   - About Awake
 author: El Ghemary Farah
 date: 2023-04-10T06:36:49.269Z
-featureImage: fractal-2173803_1920.jpg
+featureImage: /uploads/(0,5).png
 ---
 
 Imagine you're a computer Scientist tasked to optimize a real-life problem. You know that the best way to find the optimal solution is to use the simplex method. As a mathemathics undergraduate, this is how I first encountered the simplex method, and I was stressed out and overwhelmed by the sheer amount of complicated calculations involved. It didn't make any sense, and I found it difficult to use it for solving real-life Problems. However, everything changed when I started visualizing the calculations in terms of vectors and planes, everything click into place. In this Article, I want to share my understading of the simplex method, and show you how to think about it in an ituitive way. Whether you're a fellow math student or a math enthousiast looking to deeping your understanding of optimization.   
