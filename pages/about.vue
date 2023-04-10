@@ -14,7 +14,6 @@
               Hello there, and welcome to my little corner of the internet! I'm a lover of all things math, art, and technology, and this blog is my playground for exploring the fascinating connections between these worlds.          </p>
           
         </div>
-        <posts-grid :per-row="1" :number="2" />
       </template>
     </main-section>
   </div>
