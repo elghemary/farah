@@ -9,7 +9,7 @@
       <template v-slot:default>
         <div class="content">          
           <p>
-              Hello there, and welcome to my little corner of the internet! I'm a lover of all things math, art, and technology, and this blog is my playground for exploring the fascinating connections between these worlds.          </p>
+              Hello there, and welcome to my little corner of the internet! I'm a lover of all things Mathematics, Art, and Technology, and this blog is my playground for exploring the fascinating connections between these worlds.          </p>
           
         </div>
       </template>
