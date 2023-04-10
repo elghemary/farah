@@ -1,10 +1,10 @@
 ---
-title: The Core of the Simplex Method
-subtitle: The Geometrical Intuition Behind an Optimization Algorithm
+title: "The Core of the Simplex "
+subtitle: A Geometrical Intuition
 category:
-  - Mathematics
+  - About Awake
 author: El Ghemary Farah
-date: 2023-04-05T15:24:59.781Z
+date: 2023-04-10T06:36:49.269Z
 featureImage: fractal-2173803_1920.jpg
 ---
 
