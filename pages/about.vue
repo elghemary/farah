@@ -19,14 +19,3 @@
     </main-section>
   </div>
 </template>
-<script>
-import QuoteCard from '~/components/cards/QuoteCard'
-export default {
-  head() {
-    return {
-      title: `About | ${this.$siteConfig.siteName}`
-    }
-  },
-  components: { QuoteCard }
-}
-</script>
