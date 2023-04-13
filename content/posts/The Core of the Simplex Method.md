@@ -1,6 +1,6 @@
 ---
 title: "The Core of the Simplex "
-subtitle: A Geometrical Intuition
+subtitle: " A Geometrical Intuition"
 category:
   - About Awake
 author: El Ghemary Farah
