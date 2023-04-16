@@ -16,7 +16,7 @@
              <br />
              
              <div>
-               <ahref="https://linkedin.com/in/farahelghemary/">LinkedIn</a>
+               <a href="https://linkedin.com/in/farahelghemary/">LinkedIn</a>
              </div>
              <div>
                <a href="https://instagram.com/elghemary1/">Instagram</a>
