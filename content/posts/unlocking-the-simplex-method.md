@@ -72,11 +72,7 @@ The feasible solution set of a linear program can be defined Algebraically as a 
 
 Given our previous example,  We define A as the Matrix that represents the coefficients of our constraints 
 
-![](https://latex.codecogs.com/svg.image?\inline&space;A&space;=&space;\begin{pmatrix}&space;1&space;&&space;0&space;&&space;1&space;&&space;0&space;\\1&space;&&space;1&space;&&space;0&space;&&space;1&space;\\\end{pmatrix})
-
-![](https://latex.codecogs.com/svg.image?%5Cinline%20B_1%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,B_2%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%201%20%5C%5C%201%20&%200%20%5C%5C%5Cend%7Bpmatrix%7D,%20B_3%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_4%20=%20%5Cbegin%7Bpmatrix%7D%200%20&%201%20%5C%5C%201%20&%200%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_5%20=%20%5Cbegin%7Bpmatrix%7D%200%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_6%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%200%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20)
-
-![](https://latex.codecogs.com/svg.image?%5Cinline%20%5Ctiny%20B_1%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,B_2%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%201%20%5C%5C%201%20&%200%20%5C%5C%5Cend%7Bpmatrix%7D,%20B_3%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_4%20=%20%5Cbegin%7Bpmatrix%7D%200%20&%201%20%5C%5C%201%20&%200%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_5%20=%20%5Cbegin%7Bpmatrix%7D%200%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_6%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%200%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20)
+![](https://latex.codecogs.com/svg.image?%5Cinline%20%5Ctiny%20A%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20&%201%20&%200%20%5C%5C%201%20&%201%20&%200%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D)
 
 Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
 
@@ -86,7 +82,7 @@ To reduce these vectors basis into feasible bases, we must ensure that they're i
 
 ![](https://latex.codecogs.com/svg.image?\inline&space;Bx=b)
 
- (then being able to find the feasible solution)
+(then being able to find the feasible solution)
 
 By finding a basis for a feasible solution, we are essentially identifying the set of basic variables that correspond to a particular corner point of the feasible region. This translate into moving from one basic feasible solution to another, which does improve our function.
 
