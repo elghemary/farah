@@ -82,7 +82,7 @@ For this sub-matrices to be a basis of our LP, it means that it spans the feasib
 
 ![](https://latex.codecogs.com/svg.image?\inline&space;Bx=b)
 
-Hence, we must calculate the determinant of each sub-matrices and chose te ones that are invertible.
+Hence, we must calculate the determinant of each sub-matrices and chose the ones that are invertible.
 
 By finding a basis for a feasible solution, we are essentially identifying the set of basic variables that correspond to a particular corner point of the feasible region. This translate into moving from one basic feasible solution to another, which does improve our function.
 
