@@ -26,14 +26,14 @@ To ensure that our model is indeed a linear program, it must satisfy three condi
 * ﻿The objective and constraints are linear.
 * ﻿There must be a single objective to either maximize or minimize the function.
 
-### The Standardization of an LP
+#### The Standardization of an LP
 
 The Simplex method requires a standard form of the LP to work properly, which means satisfying this two requirements:     
 
 * All the constraints are equations. This restriction ensures that we have a fixed amount of resources and it is easier to manipulate and analysis our LP, it allows us to use algebraic techniques to solve it.       
 * The right hand side and all the variables are non negative. The right hand side represents the resources available, This restriction ensures that the feasible region is closed and bounded, and it ensures that we are not dealing with negative resources which is impossible in the real-world.    
 
-**To standardize our LP :**
+To standardize our LP :
 
 * converting (<) inequalities into equations : we add a non negative slack variable to the left hand side, which represents the unused amount of resources
 * converting (>) inequalities into equations : we substrate a non negative surplus variable, which represents how much we exceeds the limits.    
@@ -66,13 +66,13 @@ A simplex according to [Wikipedia](https://en.wikipedia.org/wiki/Simplex) :
 
 Hence where the name "Simplex" comes from, as it refers to the fact that we are essentially moving from vertex to vertex of a simplex.
 
-### A linear Algebraic Approach of the Algorithm
+#### A linear Algebraic Approach of the Algorithm
 
 The feasible solution set of a linear program can be defined Algebraically as a linear combination of basis vectors. These basis vectors are selected in such a way that they span the solution set. To obtain these basis vectors we start by writing our linear system in the form of matrices. 
 
 Given our previous example,  We define A as the Matrix that represents the coefficients of our constraints 
 
-![](https://latex.codecogs.com/svg.image?A&space;=\begin{pmatrix}&space;1&space;&&space;0&space;&&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;&&space;0&space;&&space;1&space;\\\end{pmatrix})
+![](/uploads/codecogseqn.svg)
 
 Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
 
