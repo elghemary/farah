@@ -10,16 +10,19 @@
         <div class="content">          
           <p>
              Hello :) <br />
-             Welcome to my little corner of the internet!My name is Farah, and I'm a lover of all things Mathematics, Art, and Technology, and this is my playground for exploring the fascinating topics of each field.          </p>
+             Welcome to my little corner of the internet! My name is Farah, and I'm a lover of all things Mathematics, Art, and Technology, and this is my playground for exploring the fascinating topics of each field.          </p>
              <br />  
-             <br />
              How to reach out to me:
              <br />
              <div>
-               <b-link href="#foo">Link</b-link>
+               <a href="elghemary@gmail.com">e-mail</a>
              </div>
-             
-
+             <div>
+               <a href="linkedin.com/in/farahelghemary/">LinkedIn</a>
+             </div>
+             <div>
+               <a href="instagram.com/elghemary1/">Instagram</a>
+             </div>
  <br />
 
         </div>
