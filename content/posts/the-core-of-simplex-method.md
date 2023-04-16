@@ -7,7 +7,7 @@ author: El Ghemary Farah
 date: 2023-04-16T15:04:28.069Z
 featureImage: /uploads/(3.2).png
 ---
-The simplex method is one of the best ways to optimize a real-life problem. As a mathematics undergraduate, this is how I first discovered this algorithm. However, I was overwhelmed by the sheer amount of the complicated calculations involved. First, It didn't make any sense, But everything changed when I started visualizing the calculations in terms of vectors and planes, everything click into place.
+The simplex method is one of the best ways to optimize a real-life problem. As a mathematics undergraduate, this is how I first discovered this algorithm. However, I was overwhelmed by the sheer amount of the complicated calculations involved. First, It didn't make any sense, but everything click into place when I started visualizing the calculations in terms of vectors and planes.
 
  In this Article, I want to share my understanding of the simplex method, and show you how to use Linear Algebra to think about it in an intuitive way. Whether you're a fellow math student or a math enthusiast looking to deepen your understanding of the Simplex Method.   
 
@@ -53,7 +53,7 @@ What does that mean Geometrically ?
 
 The fundamental theorem of linear programming provides us with an important insight : if our set of feasible solutions is a convex set, we can assume that the optimal solution is one of the vertices of the feasible polytope.   
 
-The previous property allows us to iterate efficiently a dramatically reduced number of solutions. Using it we can improve our previous algorithm : 
+This property allows us to iterate efficiently a dramatically reduced number of solutions. Using it we can improve our previous algorithm : 
 
 1. Choose an initial feasible solution, which corresponds to a vertex of the feasible region.
 2. Check if the current solution is optimizing my function. If it is, stop and return the solution.
@@ -74,16 +74,20 @@ Given our previous example,  We define A as the Matrix that represents the coeff
 
 ![](https://latex.codecogs.com/svg.image?%5Cinline%20A%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20&%201%20&%200%20%5C%5C%201%20&%201%20&%200%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D)
 
-Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
+Since the feasible solution set is defined by 2 constraints, it is natural to define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
 
 ![](/uploads/equation.svg)
 
-To reduce these vectors basis into feasible bases, we must ensure that they're invertible to satisfy 
+For this sub-matrices to be a basis of our LP, it means that it spans the feasible solution set, in a another word, it satisfy the following : 
 
 ![](https://latex.codecogs.com/svg.image?\inline&space;Bx=b)
 
-(then being able to find the feasible solution)
+Hence, we must calculate the determinant of each sub-matrices and chose te ones that are invertible.
 
 By finding a basis for a feasible solution, we are essentially identifying the set of basic variables that correspond to a particular corner point of the feasible region. This translate into moving from one basic feasible solution to another, which does improve our function.
 
 After reducing the feasible set, the final step is to calculate the reduced cost function related to each basis. If the function is positive, we still have resources that can be used, indicating our solution is not optimal. If it is negative, we have used all our resources, and we found the basis of our LP. Congratulation! the solution calculated using this basis is a  BFS
+
+
+
+In conclusion, the simplex method is a powerful algorithm, although it has some limitations, it remains one of the most widely used methods in the field of Optimization. Understanding its core principles is essential for anyone who wants to solve real-world problems efficiently and effectively
