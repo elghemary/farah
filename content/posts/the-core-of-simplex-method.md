@@ -4,7 +4,7 @@ subtitle: A Linear Algebraic approach
 category:
   - Mathematics
 author: El Ghemary Farah
-date: 2023-04-16T05:58:57.531Z
+date: 2023-04-16T15:04:28.069Z
 featureImage: /uploads/(3.2).png
 ---
 The simplex method is one of the best ways to optimize a real-life problem. As a mathematics undergraduate, this is how I first discovered this algorithm. However, I was overwhelmed by the sheer amount of the complicated calculations involved. First, It didn't make any sense, But everything changed when I started visualizing the calculations in terms of vectors and planes, everything click into place.
