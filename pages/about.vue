@@ -16,10 +16,10 @@
              <br />
              
              <div>
-               <b-link href="linkedin.com/in/farahelghemary/">LinkedIn</b-link>
+               <ahref="https://linkedin.com/in/farahelghemary/">LinkedIn</a>
              </div>
              <div>
-               <a href="instagram.com/elghemary1/">Instagram</a>
+               <a href="https://instagram.com/elghemary1/">Instagram</a>
              </div>
  <br />
 
