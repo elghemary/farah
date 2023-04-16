@@ -72,15 +72,15 @@ The feasible solution set of a linear program can be defined Algebraically as a 
 
 Given our previous example,  We define A as the Matrix that represents the coefficients of our constraints 
 
-![](https://latex2png.com/pngs/4f78d0433070a9856fa46493d9c680f6.png)
+![](https://latex.codecogs.com/svg.image?A&space;=\begin{pmatrix}&space;1&space;&&space;0&space;&&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;&&space;0&space;&&space;1&space;\\\end{pmatrix})
 
 Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
 
-![](https://latex2png.com/pngs/cdc602fd193d967577527ccb0e76fd9d.png)
+![](https://latex.codecogs.com/svg.image?\inline&space;\tiny&space;B_1&space;=\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},B_2&space;=\begin{pmatrix}&space;1&space;&&space;1&space;\\&space;1&space;&&space;0&space;\\\end{pmatrix}&space;,B_3&space;=\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},&space;B_4&space;=\begin{pmatrix}&space;0&space;&&space;1&space;\\&space;1&space;&&space;0&space;\\\end{pmatrix}&space;,B_5&space;=&space;\begin{pmatrix}0&space;&&space;0&space;\\1&space;&&space;1\\\end{pmatrix}&space;,B_6&space;=&space;\begin{pmatrix}1&space;&&space;0&space;\\0&space;&&space;&space;1\\\end{pmatrix}&space;&space;)
 
 To reduce these vectors basis into feasible bases, we must ensure that they're invertible to satisfy 
 
-![](https://latex2png.com/pngs/a07502a25a67211d45447c7b70f6658a.png)
+![](https://latex.codecogs.com/svg.image?\inline&space;Bx=b)
 
  (then being able to find the feasible solution)
 
