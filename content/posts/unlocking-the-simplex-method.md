@@ -1,6 +1,6 @@
 ---
-title: Unlocking the Simplex Method
-subtitle: A linear algebraic approach
+title: The Core of Simplex Method
+subtitle: A Linear Algebraic approach
 category:
   - Mathematics
 author: El Ghemary Farah
