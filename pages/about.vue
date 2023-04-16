@@ -14,11 +14,9 @@
              <br />  
              How to reach out to me:
              <br />
+             
              <div>
-               <a href="elghemary@gmail.com">e-mail</a>
-             </div>
-             <div>
-               <a href="linkedin.com/in/farahelghemary/">LinkedIn</a>
+               <b-link href="linkedin.com/in/farahelghemary/">LinkedIn</b-link>
              </div>
              <div>
                <a href="instagram.com/elghemary1/">Instagram</a>
