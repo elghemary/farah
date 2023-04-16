@@ -9,8 +9,9 @@
       <template v-slot:default>
         <div class="content">          
           <p>
-              Hello there, and welcome to my little corner of the internet! I'm a lover of all things Mathematics, Art, and Technology, and this blog is my playground for exploring the fascinating connections between these worlds.          </p>
-          
+             Hello :) 
+             My name is Farah, and Welcome to my little corner of the internet! I'm a lover of all things Mathematics, Art, and Technology, and this is my playground for exploring the fascinating topics of each field.          </p>
+             
         </div>
       </template>
     </main-section>
