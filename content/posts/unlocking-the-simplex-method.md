@@ -16,8 +16,6 @@ Many real-life problems can be formulated as linear programs, hence LPs are a ma
 
 Let's Consider the following example of an LP
 
-
-
 ![](https://latex.codecogs.com/svg.image?%7Bmax%7D%5C%20z%20=%20x_1%20&plus;%202x_2%20%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%7D%20s.t%5C%20%5C%20%5C%20%5C%20%20x_1%20%5Cleq%203,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1%20&plus;%20x_2%20%5Cleq%205,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1,x_2%20%5Cgeq%200)
 
 To ensure that our model is indeed a linear program, it must satisfy three conditions: 
@@ -33,8 +31,6 @@ The Simplex method requires a standard form of the LP to work properly, which me
 * all the constraints are equations. This restriction ensures that we have a fixed amount of resources and it is easier to manipulate and analysis our LP, it allows us to use algebraic techniques to solve it.       
 * The right hand side and all the variables are non negative. The right hand side represents the resources available, This restriction ensures that the feasible region is closed and bounded, and it ensures that we are not dealing with negative resources which is impossible in the real-world.    
 
-
-
 **To standardize our LP :**
 
 * converting (=<) inequalities into equations : we add a non negative slack variable to the left hand side, which represents the unused amount of resources
@@ -42,11 +38,7 @@ The Simplex method requires a standard form of the LP to work properly, which me
 
 Considering the example I previously mentioned, the standard form for the LP would be:
 
-
-
 ![](https://latex.codecogs.com/svg.image?%7Bmax%7D%5C%20z%20=%20x_1%20&plus;%202x_2%20%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%7D%20s.t%5C%20%5C%20%5C%20%5C%20%20x_1%20&plus;%20x_3%20=%203,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1%20&plus;%20x_2%20&plus;%20x_4%20=%205,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1,x_2,%20x_3,%20x_4%20%5Cgeq%200)
-
-
 
 The fundamental idea of the simplex method is to improve the feasible solution at each iteration until we reach the optimal one. summarized as the following algorithm
 
@@ -66,11 +58,7 @@ Using this insight, let's improve our previous algorithm
 3. If not, examine the neighboring vertices to find the one that improves the objective function the most.
 4. Move to that neighboring vertex and continue the process from step 2 until we reach the optimal solution.
 
-
-
 ## To modify
-
-
 
 Let's Apply this to the previous example of our LP
 
@@ -99,4 +87,14 @@ Let's Apply this to the previous example of our LP
 
 ### A linear Algebraic Approach of the Algorithm
 
-To find the optimal solution of our Liear system, means to solve
+The feasible solution set of a linear program can be defined Algebraically as a linear combination of basis vectors. These basis vectors are selected in such a way that they span the solution set. To obtain these basis vectors we start by writing our linear system in the form of matrices. 
+
+Given our previous example,  We define A as the Matrix that represents the coefficients of our constraints A = 
+
+Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 submatrices from A.
+
+To reduce these vectors basis into feasible bases, we must ensure that they're invertible to satisfy Bx=b (then being able to find the feasible solution)
+
+By finding a basis for a feasible solution, we are essentially identifying the set of basic variables that correspond to a particular corner point of the feasible region. This translate into moving from one basic feasible solution to another, which does improve our function.
+
+After reducing the feasible set, the final step is to calculate the reduced cost function related to each basis. If the fucntion is postive, we still have resources that can be used, indicating our solution is not optimal. If it is negative, we have used all our resources, and we found the basis of our LP. Congratulation! the solution calculated using this basis is a  BFS
