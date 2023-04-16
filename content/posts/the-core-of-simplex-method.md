@@ -76,8 +76,6 @@ Given our previous example,  We define A as the Matrix that represents the coeff
 
 Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
 
-![](hhttps://latex.codecogs.com/svg.image?%5Cinline%20B_1%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,B_2%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%201%20%5C%5C%20%201%20&%200%20%5C%5C%5Cend%7Bpmatrix%7D,%20B_3%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_4%20=%20%5Cbegin%7Bpmatrix%7D%200%20&%201%20%5C%5C%201%20&%200%20%5C%5C%5Cend%7Bpmatrix%7D,%20%5C%5C%20B_5%20=%20%5Cbegin%7Bpmatrix%7D%200%20&%200%20%5C%5C%201%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20B_6%20=%20%5Cbegin%7Bpmatrix%7D%201%20&%200%20%5C%5C%200%20&%201%20%5C%5C%5Cend%7Bpmatrix%7D,%20%20)
-
 To reduce these vectors basis into feasible bases, we must ensure that they're invertible to satisfy 
 
 ![](https://latex.codecogs.com/svg.image?\inline&space;Bx=b)
