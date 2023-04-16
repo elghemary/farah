@@ -72,11 +72,11 @@ The feasible solution set of a linear program can be defined Algebraically as a 
 
 Given our previous example,  We define A as the Matrix that represents the coefficients of our constraints 
 
-![](/uploads/codecogseqn.svg)
+![](https://latex.codecogs.com/svg.image?\inline&space;A&space;=&space;\begin{pmatrix}&space;1&space;&&space;0&space;&&space;1&space;&&space;0&space;\\1&space;&&space;1&space;&&space;0&space;&&space;1&space;\\\end{pmatrix})
 
 Since the feasible solution set is defined by the 2 constraints of our LP, we must define the basis with 2 vectors. Therefore,  we can then generate 6 sub-matrices from A.
 
-![](https://latex.codecogs.com/svg.image?\inline&space;\tiny&space;B_1&space;=\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},B_2&space;=\begin{pmatrix}&space;1&space;&&space;1&space;\\&space;1&space;&&space;0&space;\\\end{pmatrix}&space;,B_3&space;=\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},&space;B_4&space;=\begin{pmatrix}&space;0&space;&&space;1&space;\\&space;1&space;&&space;0&space;\\\end{pmatrix}&space;,B_5&space;=&space;\begin{pmatrix}0&space;&&space;0&space;\\1&space;&&space;1\\\end{pmatrix}&space;,B_6&space;=&space;\begin{pmatrix}1&space;&&space;0&space;\\0&space;&&space;&space;1\\\end{pmatrix}&space;&space;)
+![](https://latex.codecogs.com/svg.image?\inline&space;\tiny&space;B_1&space;=&space;\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},B_2&space;=&space;\begin{pmatrix}&space;1&space;&&space;1&space;\\&space;1&space;&&space;0&space;\\\end{pmatrix},&space;B_3&space;=&space;\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},&space;&space;B_4&space;=&space;\begin{pmatrix}&space;0&space;&&space;1&space;\\&space;1&space;&&space;0&space;\\\end{pmatrix},&space;&space;B_5&space;=&space;\begin{pmatrix}&space;0&space;&&space;0&space;\\&space;1&space;&&space;1&space;\\\end{pmatrix},&space;&space;B_6&space;=&space;\begin{pmatrix}&space;1&space;&&space;0&space;\\&space;0&space;&&space;1&space;\\\end{pmatrix},&space;&space;)
 
 To reduce these vectors basis into feasible bases, we must ensure that they're invertible to satisfy 
 
