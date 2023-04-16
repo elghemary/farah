@@ -3,7 +3,7 @@
     <site-hero
       title="Arsteminisit"
       subtitle="El Ghemary Farah"
-      image="/assets/uploads/2.jpg"
+      image="/uploads/2.jpg "
     ></site-hero>
     <main-section theme="sidebar-right">
       <template v-slot:default>
