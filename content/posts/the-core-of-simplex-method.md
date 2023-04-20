@@ -20,6 +20,8 @@ Let's Consider the following example of an LP
 
 ![](https://latex.codecogs.com/svg.image?%7Bmax%7D%5C%20z%20=%20x_1%20&plus;%202x_2%20%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%7D%20s.t%5C%20%5C%20%5C%20%5C%20%20x_1%20%5Cleq%203,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1%20&plus;%20x_2%20%5Cleq%205,%5C%5C%7B%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%5C%20%7Dx_1,x_2%20%5Cgeq%200)
 
+![](/uploads/screenshot-from-2023-04-20-01-14-46.png)
+
 To ensure that our model is indeed a linear program, it must satisfy three conditions: 
 
 * ﻿All variables are continuous
@@ -87,7 +89,5 @@ Hence, we must calculate the determinant of each sub-matrices and chose the ones
 By finding a basis for a feasible solution, we are essentially identifying the set of basic variables that correspond to a particular corner point of the feasible region. This translate into moving from one basic feasible solution to another, which does improve our function.
 
 After reducing the feasible set, the final step is to calculate the reduced cost function related to each basis. If the function is positive, we still have resources that can be used, indicating our solution is not optimal. If it is negative, we have used all our resources, and we found the basis of our LP. Congratulation! the solution calculated using this basis is a  BFS
-
-
 
 In conclusion, the simplex method is a powerful algorithm, although it has some limitations, it remains one of the most widely used methods in the field of Optimization. Understanding its core principles is essential for anyone who wants to solve real-world problems efficiently and effectively
